@@ -19,13 +19,13 @@ export default function VisionSection() {
             Slow is smooth. Smooth is fast.
           </h2>
           <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-            We don't ship half-baked features to hit a sprint deadline. We build
-            things properly, test them obsessively, and release when they're
-            actually ready. That means fewer releases, but each one works.
+            We don't ship half-baked features to hit a sprint deadline. We build things properly,
+            test them obsessively, and release when they're actually ready. That means fewer
+            releases, but each one works.
           </p>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-            We're not trying to disrupt anything. We're just tired of tools that
-            get in the way. So we're making ones that don't.
+            We're not trying to disrupt anything. We're just tired of tools that get in the way. So
+            we're making ones that don't.
           </p>
 
           <div className="mt-12 grid grid-cols-3 gap-px border border-border">

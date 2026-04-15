@@ -29,14 +29,20 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "SlothDevs — Developer tools that don't suck" },
+      {
+        name: "description",
+        content: "Building SlothForge and SlothOps. Pre-production developer tools.",
+      },
+      { name: "author", content: "SlothDevs" },
+      { property: "og:title", content: "SlothDevs — Developer tools that don't suck" },
+      {
+        property: "og:description",
+        content: "Building SlothForge and SlothOps. Pre-production developer tools.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:site", content: "@slothdevs" },
     ],
     links: [
       {

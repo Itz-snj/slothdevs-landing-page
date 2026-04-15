@@ -12,7 +12,11 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "SlothDevs — Developer tools that don't suck" },
-      { name: "description", content: "SlothDevs builds SlothForge and SlothOps. Pre-production — book a call with the engineers." },
+      {
+        name: "description",
+        content:
+          "SlothDevs builds SlothForge and SlothOps. Pre-production — book a call with the engineers.",
+      },
     ],
   }),
 });

@@ -20,12 +20,15 @@ export default function BentoEcosystem() {
             <p className="font-mono text-xs text-muted-foreground mb-4">01</p>
             <h3 className="font-mono text-xl font-bold text-foreground mb-4">SlothOps</h3>
             <p className="text-sm leading-relaxed text-muted-foreground mb-8">
-              Pipeline automation that handles build, test, security scan, and
-              deploy. Point it at a repo and it figures out the rest. No YAML
-              marathons. Config is code, and the defaults are sane.
+              A closed-loop, production-aware pipeline that converts live application crashes into
+              reviewed code fixes — automatically. Listens for real-time error events via Sentry,
+              fetches source from GitHub, generates validated fixes using LLM, runs a full QA suite,
+              and opens a governed Pull Request — all before a developer even looks at the alert.
             </p>
             <div className="border border-border bg-background p-4 font-mono text-xs text-muted-foreground">
-              <p><span className="text-foreground">pipeline:</span></p>
+              <p>
+                <span className="text-foreground">pipeline:</span>
+              </p>
               <p className="pl-4">source: github/acme/api</p>
               <p className="pl-4">steps:</p>
               <p className="pl-6">- lint</p>
@@ -47,9 +50,10 @@ export default function BentoEcosystem() {
             <p className="font-mono text-xs text-muted-foreground mb-4">02</p>
             <h3 className="font-mono text-xl font-bold text-foreground mb-4">SlothForge</h3>
             <p className="text-sm leading-relaxed text-muted-foreground mb-8">
-              A local-first developer workspace. Fast indexing, built-in
-              terminal multiplexer, and AI that actually reads your codebase
-              instead of guessing. Still early — we're dogfooding it ourselves.
+              A living software factory that converts product ideas into deployed MVPs. Combines
+              LLM-powered requirement extraction, automated ticket generation, intelligent build
+              orchestration, and continuous drift detection to maintain alignment between
+              specifications and implementation.
             </p>
             {/* Wireframe IDE mock */}
             <div className="border border-border bg-background">
@@ -57,21 +61,22 @@ export default function BentoEcosystem() {
                 <div className="w-48 border-r border-border p-3">
                   <p className="font-mono text-[10px] text-muted-foreground mb-2">EXPLORER</p>
                   <p className="font-mono text-xs text-foreground/50">├── src/</p>
-                  <p className="font-mono text-xs text-foreground/50">│   ├── index.ts</p>
-                  <p className="font-mono text-xs text-foreground/50">│   └── lib/</p>
+                  <p className="font-mono text-xs text-foreground/50">│ ├── index.ts</p>
+                  <p className="font-mono text-xs text-foreground/50">│ └── lib/</p>
                   <p className="font-mono text-xs text-foreground/50">├── tests/</p>
                   <p className="font-mono text-xs text-foreground/50">└── package.json</p>
                 </div>
                 <div className="flex-1 p-3">
                   <p className="font-mono text-[10px] text-muted-foreground mb-2">index.ts</p>
                   <p className="font-mono text-xs text-foreground/40">
-                    <span className="text-muted-foreground">1</span>  import {"{"} serve {"}"} from './lib/server'
+                    <span className="text-muted-foreground">1</span> import {"{"} serve {"}"} from
+                    './lib/server'
                   </p>
                   <p className="font-mono text-xs text-foreground/40">
-                    <span className="text-muted-foreground">2</span>  
+                    <span className="text-muted-foreground">2</span>
                   </p>
                   <p className="font-mono text-xs text-foreground/40">
-                    <span className="text-muted-foreground">3</span>  serve({"{"} port: 3000 {"}"})
+                    <span className="text-muted-foreground">3</span> serve({"{"} port: 3000 {"}"})
                   </p>
                 </div>
               </div>

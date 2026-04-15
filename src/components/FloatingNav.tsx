@@ -7,10 +7,16 @@ export default function FloatingNav() {
         </span>
 
         <div className="flex items-center gap-6">
-          <a href="#ecosystem" className="font-mono text-xs text-muted-foreground transition-colors hover:text-foreground">
+          <a
+            href="#ecosystem"
+            className="font-mono text-xs text-muted-foreground transition-colors hover:text-foreground"
+          >
             Ecosystem
           </a>
-          <a href="#manifesto" className="font-mono text-xs text-muted-foreground transition-colors hover:text-foreground">
+          <a
+            href="#manifesto"
+            className="font-mono text-xs text-muted-foreground transition-colors hover:text-foreground"
+          >
             Manifesto
           </a>
           <a
