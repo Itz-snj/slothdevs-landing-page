@@ -15,7 +15,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "SlothDevs builds SlothForge and SlothOps. Pre-production — book a call with the engineers.",
+          "SlothForge — the first tool that reads both your ticket system and version control to tell you at merge time whether what you shipped matches what you said you'd build.",
       },
     ],
   }),

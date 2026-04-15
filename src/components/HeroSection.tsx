@@ -15,8 +15,8 @@ export default function HeroSection() {
           </h1>
 
           <p className="mt-6 max-w-lg text-base leading-relaxed text-muted-foreground">
-            Currently building SlothForge (IDE) and SlothOps (Pipelines). We're in pre-prod. Hop on
-            a call with the engineers and tell us what you actually need.
+            Currently building SlothForge — the first tool that reads both your ticket system and
+            version control. Hop on a call with the engineers and tell us what you actually need.
           </p>
 
           <a

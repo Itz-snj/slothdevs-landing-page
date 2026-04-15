@@ -32,13 +32,15 @@ export const Route = createRootRoute({
       { title: "SlothDevs — Developer tools that don't suck" },
       {
         name: "description",
-        content: "Building SlothForge and SlothOps. Pre-production developer tools.",
+        content:
+          "Building SlothForge — the first tool that reads both your ticket system and version control to tell you at merge time whether what you shipped matches what you said you'd build.",
       },
       { name: "author", content: "SlothDevs" },
       { property: "og:title", content: "SlothDevs — Developer tools that don't suck" },
       {
         property: "og:description",
-        content: "Building SlothForge and SlothOps. Pre-production developer tools.",
+        content:
+          "Building SlothForge — the first tool that reads both your ticket system and version control to tell you at merge time whether what you shipped matches what you said you'd build.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },

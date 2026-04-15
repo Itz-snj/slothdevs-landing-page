@@ -50,10 +50,15 @@ export default function BentoEcosystem() {
             <p className="font-mono text-xs text-muted-foreground mb-4">02</p>
             <h3 className="font-mono text-xl font-bold text-foreground mb-4">SlothForge</h3>
             <p className="text-sm leading-relaxed text-muted-foreground mb-8">
-              A living software factory that converts product ideas into deployed MVPs. Combines
-              LLM-powered requirement extraction, automated ticket generation, intelligent build
-              orchestration, and continuous drift detection to maintain alignment between
-              specifications and implementation.
+              SlothForge is a{" "}
+              <span className="text-foreground font-medium">living software factory</span>. A
+              product idea enters as a conversation and exits as a deployed MVP — with the entire
+              pipeline staying in sync even when requirements change mid-build. It is the first tool
+              that simultaneously reads your{" "}
+              <span className="text-foreground font-medium">ticket system</span> and your{" "}
+              <span className="text-foreground font-medium">version control system</span> at the
+              moment a PR merges, and flags the gap between what was promised and what was actually
+              shipped.
             </p>
             {/* Wireframe IDE mock */}
             <div className="border border-border bg-background">
