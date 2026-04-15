@@ -1,40 +1,26 @@
-import { motion } from "framer-motion";
-
-const navLinks = [
-  { label: "Ecosystem", href: "#ecosystem" },
-  { label: "Vision", href: "#vision" },
-  { label: "Early Access", href: "#early-access" },
-];
-
 export default function FloatingNav() {
   return (
-    <motion.nav
-      initial={{ y: -20, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.6, delay: 0.2 }}
-      className="fixed top-6 left-1/2 z-40 -translate-x-1/2"
-    >
-      <div className="glass-nav flex items-center gap-1 rounded-full px-2 py-2">
-        <span className="px-3 text-sm font-semibold tracking-tight text-foreground">
-          🦥 SlothDevs
+    <header className="sticky top-0 z-40 w-full border-b border-border bg-background">
+      <div className="mx-auto flex h-12 max-w-7xl items-center justify-between px-6">
+        <span className="font-mono text-sm font-medium text-foreground tracking-tight">
+          SlothDevs <span className="text-muted-foreground">[Pre-Prod v0.1]</span>
         </span>
-        <div className="mx-2 h-4 w-px bg-border" />
-        {navLinks.map((link) => (
-          <a
-            key={link.href}
-            href={link.href}
-            className="rounded-full px-3.5 py-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground"
-          >
-            {link.label}
+
+        <div className="flex items-center gap-6">
+          <a href="#ecosystem" className="font-mono text-xs text-muted-foreground transition-colors hover:text-foreground">
+            Ecosystem
           </a>
-        ))}
-        <a
-          href="#early-access"
-          className="btn-glow ml-1 rounded-full px-4 py-1.5 text-sm font-medium text-background transition-all"
-        >
-          Chat with Devs
-        </a>
+          <a href="#manifesto" className="font-mono text-xs text-muted-foreground transition-colors hover:text-foreground">
+            Manifesto
+          </a>
+          <a
+            href="#book"
+            className="bg-primary text-primary-foreground px-4 py-1.5 font-mono text-xs font-medium transition-colors hover:bg-foreground"
+          >
+            Book Demo
+          </a>
+        </div>
       </div>
-    </motion.nav>
+    </header>
   );
 }

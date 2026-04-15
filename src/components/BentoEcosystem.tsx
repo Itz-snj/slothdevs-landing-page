@@ -1,94 +1,85 @@
 import { motion } from "framer-motion";
-import { Cpu, Layers, Zap, Eye, Rocket, Users } from "lucide-react";
-
-const cards = [
-  {
-    icon: Cpu,
-    title: "SlothOps",
-    description: "AI-driven pipeline automation. From build to deploy, every step is intelligent and self-healing.",
-    span: "md:col-span-2",
-    glow: "cyan",
-  },
-  {
-    icon: Layers,
-    title: "SlothForge",
-    description: "A next-gen developer environment built for speed, collaboration, and deep AI integration.",
-    span: "md:col-span-1",
-    glow: "purple",
-  },
-  {
-    icon: Zap,
-    title: "DX First",
-    description: "Every API, every CLI, every interface — designed to feel invisible. Tools that just work.",
-    span: "md:col-span-1",
-    glow: "cyan",
-  },
-  {
-    icon: Eye,
-    title: "Built in Public",
-    description: "We share our roadmap, our mistakes, and our progress. Full transparency, zero gatekeeping.",
-    span: "md:col-span-1",
-    glow: "purple",
-  },
-  {
-    icon: Rocket,
-    title: "Pre-Production Access",
-    description: "Get early access to prototypes, give direct feedback, and shape the tools before launch.",
-    span: "md:col-span-1",
-    glow: "cyan",
-  },
-];
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 30 },
-  visible: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.6, delay: i * 0.1 },
-  }),
-};
 
 export default function BentoEcosystem() {
   return (
-    <section id="ecosystem" className="relative px-6 py-32">
-      <div className="mx-auto max-w-6xl">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="mb-16 text-center"
-        >
-          <p className="mb-3 text-sm font-medium tracking-widest uppercase text-primary">
-            Ecosystem
-          </p>
-          <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
-            Two products. One vision.
-          </h2>
-          <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
-            Everything we&rsquo;re building is designed to work together — a unified
-            developer experience from code to cloud.
-          </p>
-        </motion.div>
+    <section id="ecosystem" className="border-b border-border px-6 py-24">
+      <div className="mx-auto max-w-7xl">
+        <p className="mb-16 font-mono text-xs uppercase tracking-widest text-muted-foreground">
+          Ecosystem
+        </p>
 
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
-          {cards.map((card, i) => (
-            <motion.div
-              key={card.title}
-              custom={i}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeUp}
-              className={`bento-card group rounded-2xl p-8 transition-all duration-300 ${card.span}`}
-            >
-              <div className={`mb-5 inline-flex rounded-xl bg-accent p-3 ${card.glow === "cyan" ? "glow-cyan" : "glow-purple"}`}>
-                <card.icon size={22} className={card.glow === "cyan" ? "text-primary" : "text-neon-purple"} />
+        <div className="grid grid-cols-1 gap-px border border-border lg:grid-cols-2">
+          {/* SlothOps */}
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4 }}
+            className="border-b border-border p-8 lg:border-r lg:border-b-0"
+          >
+            <p className="font-mono text-xs text-muted-foreground mb-4">01</p>
+            <h3 className="font-mono text-xl font-bold text-foreground mb-4">SlothOps</h3>
+            <p className="text-sm leading-relaxed text-muted-foreground mb-8">
+              Pipeline automation that handles build, test, security scan, and
+              deploy. Point it at a repo and it figures out the rest. No YAML
+              marathons. Config is code, and the defaults are sane.
+            </p>
+            <div className="border border-border bg-background p-4 font-mono text-xs text-muted-foreground">
+              <p><span className="text-foreground">pipeline:</span></p>
+              <p className="pl-4">source: github/acme/api</p>
+              <p className="pl-4">steps:</p>
+              <p className="pl-6">- lint</p>
+              <p className="pl-6">- test --parallel</p>
+              <p className="pl-6">- security-audit</p>
+              <p className="pl-6">- deploy --edge --regions us,eu</p>
+              <p className="pl-4">notify: slack #deploys</p>
+            </div>
+          </motion.div>
+
+          {/* SlothForge */}
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4, delay: 0.1 }}
+            className="p-8"
+          >
+            <p className="font-mono text-xs text-muted-foreground mb-4">02</p>
+            <h3 className="font-mono text-xl font-bold text-foreground mb-4">SlothForge</h3>
+            <p className="text-sm leading-relaxed text-muted-foreground mb-8">
+              A local-first developer workspace. Fast indexing, built-in
+              terminal multiplexer, and AI that actually reads your codebase
+              instead of guessing. Still early — we're dogfooding it ourselves.
+            </p>
+            {/* Wireframe IDE mock */}
+            <div className="border border-border bg-background">
+              <div className="flex border-b border-border">
+                <div className="w-48 border-r border-border p-3">
+                  <p className="font-mono text-[10px] text-muted-foreground mb-2">EXPLORER</p>
+                  <p className="font-mono text-xs text-foreground/50">├── src/</p>
+                  <p className="font-mono text-xs text-foreground/50">│   ├── index.ts</p>
+                  <p className="font-mono text-xs text-foreground/50">│   └── lib/</p>
+                  <p className="font-mono text-xs text-foreground/50">├── tests/</p>
+                  <p className="font-mono text-xs text-foreground/50">└── package.json</p>
+                </div>
+                <div className="flex-1 p-3">
+                  <p className="font-mono text-[10px] text-muted-foreground mb-2">index.ts</p>
+                  <p className="font-mono text-xs text-foreground/40">
+                    <span className="text-muted-foreground">1</span>  import {"{"} serve {"}"} from './lib/server'
+                  </p>
+                  <p className="font-mono text-xs text-foreground/40">
+                    <span className="text-muted-foreground">2</span>  
+                  </p>
+                  <p className="font-mono text-xs text-foreground/40">
+                    <span className="text-muted-foreground">3</span>  serve({"{"} port: 3000 {"}"})
+                  </p>
+                </div>
               </div>
-              <h3 className="mb-2 text-lg font-semibold text-foreground">{card.title}</h3>
-              <p className="text-sm leading-relaxed text-muted-foreground">{card.description}</p>
-            </motion.div>
-          ))}
+              <div className="p-3 font-mono text-[10px] text-muted-foreground">
+                TERMINAL — Ready
+              </div>
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>
