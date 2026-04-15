@@ -11,17 +11,15 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "SlothDevs — The Next Era of Developer Tooling" },
-      { name: "description", content: "SlothDevs builds an ecosystem of developer-friendly tools. Pre-production access available — book a live demo with the team." },
-      { property: "og:title", content: "SlothDevs — The Next Era of Developer Tooling" },
-      { property: "og:description", content: "Unhurried, Unmatched. Explore SlothOps and SlothForge before anyone else." },
+      { title: "SlothDevs — Developer tools that don't suck" },
+      { name: "description", content: "SlothDevs builds SlothForge and SlothOps. Pre-production — book a call with the engineers." },
     ],
   }),
 });
 
 function Index() {
   return (
-    <div className="grain-overlay relative min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-background text-foreground">
       <FloatingNav />
       <HeroSection />
       <StackMarquee />
