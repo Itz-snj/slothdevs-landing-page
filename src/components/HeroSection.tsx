@@ -194,7 +194,7 @@ export default function HeroSection() {
           transition={{ duration: 0.5 }}
         >
           <h1 className="font-mono text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-            We are building tools that don't suck.
+            We build developer tools that close the loop.
           </h1>
 
           <p className="mt-6 max-w-lg text-base leading-relaxed text-muted-foreground">

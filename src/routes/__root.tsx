@@ -29,14 +29,14 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "SlothDevs — Developer tools that don't suck" },
+      { title: "SlothDevs — Developer tools that close the loop" },
       {
         name: "description",
         content:
           "Building SlothForge — the first tool that reads both your ticket system and version control to tell you at merge time whether what you shipped matches what you said you'd build.",
       },
       { name: "author", content: "SlothDevs" },
-      { property: "og:title", content: "SlothDevs — Developer tools that don't suck" },
+      { property: "og:title", content: "SlothDevs — Developer tools that close the loop" },
       {
         property: "og:description",
         content:

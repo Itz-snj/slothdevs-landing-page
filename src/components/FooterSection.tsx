@@ -12,26 +12,35 @@ export default function FooterSection() {
             <p className="mt-1 text-xs text-muted-foreground">
               © {new Date().getFullYear()} All rights reserved.
             </p>
+            <p className="mt-1 font-mono text-xs text-muted-foreground">
+              Built by{" "}
+              <a
+                href="https://github.com/Itz-snj"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-foreground hover:underline"
+              >
+                itz-snj
+              </a>
+            </p>
           </div>
 
           <div className="flex items-center gap-6 sm:justify-center">
             <a
-              href="https://github.com"
+              href="https://github.com/Itz-snj"
+              target="_blank"
+              rel="noopener noreferrer"
               className="font-mono text-xs text-muted-foreground hover:text-foreground"
             >
               GitHub
             </a>
             <a
-              href="https://discord.com"
+              href="https://x.com/Suman_N_Jain"
+              target="_blank"
+              rel="noopener noreferrer"
               className="font-mono text-xs text-muted-foreground hover:text-foreground"
             >
-              Discord
-            </a>
-            <a
-              href="https://twitter.com"
-              className="font-mono text-xs text-muted-foreground hover:text-foreground"
-            >
-              Twitter
+              X
             </a>
           </div>
 

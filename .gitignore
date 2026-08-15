@@ -1,3 +1,7 @@
+# Lockfiles from other package managers (pnpm-lock.yaml is the source of truth)
+bun.lockb
+package-lock.json
+
 # Logs
 logs
 *.log

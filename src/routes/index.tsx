@@ -11,7 +11,7 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "SlothDevs — Developer tools that don't suck" },
+      { title: "SlothDevs — Developer tools that close the loop" },
       {
         name: "description",
         content:
